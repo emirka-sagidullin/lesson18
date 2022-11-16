@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 -->
+    <select id="slist">
+        <option value="rock">Рок</option>
+        <option value="blues">Блюз</option>
+    </select>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- 2 -->
+    <ul>
+        <li>Кликните на div ниже, чтобы отредактировать текст.</li>
+        <li>Нажатие на Enter или потеря фокуса с ввода сохранят содержимое.</li>
+      </ul>
+    
+      HTML-код разрешён.
+    
+      <div id="view" class="view">Джавапон</div>
+
+      <br>
+      <hr>
+      <br>
+
+      <!-- 3 -->
+      <p>Кликните на ячейку таблицы, чтобы отредактировать её. Нажмите ОК или ОТМЕНА, когда закончите.</p>
+
+  <table id="bagua-table">
+    <tr>
+      <th colspan="3">Квадрат <em>Bagua</em>: Направление, Элемент, Цвет, Значение</th>
+    </tr>
+    <tr>
+      <td class="nw"><strong>Северо-Запад</strong>
+        <br>Металл
+        <br>Серебро
+        <br>Старейшины
+      </td>
+      <td class="n"><strong>Север</strong>
+        <br>Вода
+        <br>Синий
+        <br>Перемены
+      </td>
+      <td class="ne"><strong>Северо-Восток</strong>
+        <br>Земля
+        <br>Жёлтый
+        <br>Направление
+      </td>
+    </tr>
+    <tr>
+      <td class="w"><strong>Запад</strong>
+        <br>Металл
+        <br>Золото
+        <br>Молодость
+      </td>
+      <td class="c"><strong>Центр</strong>
+        <br>Всё
+        <br>Пурпурный
+        <br>Гармония
+      </td>
+      <td class="e"><strong>Восток</strong>
+        <br>Дерево
+        <br>Синий
+        <br>Будущее
+      </td>
+    </tr>
+    <tr>
+      <td class="sw"><strong>Юго-Запад</strong>
+        <br>Земля
+        <br>Коричневый
+        <br>Спокойствие
+      </td>
+      <td class="s"><strong>Юг</strong>
+        <br>Огонь
+        <br>Оранжевый
+        <br>Слава
+      </td>
+      <td class="se"><strong>Юго-Восток</strong>
+        <br>Дерево
+        <br>Зеленый
+        <br>Роман
+      </td>
+    </tr>
+
+  </table>
+
+      <br>
+      <hr>
+      <br>
+
+      <!-- 4 -->
+      <p>Дпозитный калькулятор</p>
+      <br>
+      <label for="startDeposit">Первоначальный депозит</label> <input onblur="startValue()" type="text" name="startDeposit" id="startDeposit" class="startDeposit">
+      <br>
+      <label for="depositTerm">Срок вклада(месяцы)</label> 
+      <select id="depositTerm" name="depositTerm" class="depositTerm">
+        <option>6</option>
+        <option>12</option>
+        <option>18</option>
+        <option>24</option>
+        <option>30</option>
+      </select>
+      <br>
+      <label for="percent">Годовая процентная ставка</label> <input value="" onblur="finishValue()" type="text" name="percent" id="percent" class="percent">
+      <div class="resultBlock">
+        <div class="firstResult">
+          <p>Было:</p>
+          <div id="start" class="start"></div>
+        </div>
+        <div class="secondResult">
+          <p>Стало:</p>
+          <div id="finish" class="finish"></div>
+        </div>
+      </div>
+      <div class="pillars">
+        <div class="redPillar" id="redPillar"></div>
+        <div class="greenPillar" id="greenPillar"></div>
+      </div>
+      <script>
+        // ...ваш код...
+        // Заметьте: <textarea> должен иметь class="edit"
+        // my.css содержит стиль, чтобы <textarea> и <div> были одного размера
+            
+      </script>
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
